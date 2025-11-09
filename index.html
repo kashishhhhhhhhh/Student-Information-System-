@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SIS • Home — Kashish</title>
+  <link rel="stylesheet" href="assets.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">KS</div>
+        <div class="title"><h1>Student Information System</h1><small>Modern admin UI — by Kashish</small></div>
+      </div>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="students.html">Students</a>
+        <a href="courses.html">Courses</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="enrollments.html">Enrollments</a>
+        <a href="grades.html">Grades</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section>
+        <h2>Welcome, Admin</h2>
+        <p class="text-muted">This is a dark-themed SIS prototype with dialog-driven forms and client-side validation. Click "Add Student" to see the modal form.</p>
+        <div style="margin-top:12px">
+          <button class="btn" data-open="dlgAddStudent">Add Student</button>
+          <a class="btn" href="students.html" style="margin-left:8px">Manage Students</a>
+        </div>
+
+        <div class="grid" style="margin-top:18px">
+          <div class="card">
+            <div class="title">Announcements</div>
+            <p class="text-muted">Semester registration open — integrate with backend to enable real operations.</p>
+          </div>
+          <div class="card">
+            <div class="title">Quick Links</div>
+            <div style="margin-top:8px"><a class="btn" href="add-course.html">Add Course</a> <a class="btn ghost" href="add-enrollment.html">Enroll Student</a></div>
+          </div>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card">
+          <h3 class="center">Snapshot</h3>
+          <div style="display:flex;justify-content:space-between;margin-top:12px">
+            <div class="kpi"><h2>1,240</h2><small class="text-muted">Students</small></div>
+            <div class="kpi"><h2>34</h2><small class="text-muted">Courses</small></div>
+          </div>
+          <div style="height:12px"></div>
+          <div class="kpi"><h2>3,980</h2><small class="text-muted">Enrollments</small></div>
+        </div>
+      </aside>
+    </main>
+
+    <section style="margin-top:18px" class="card">
+      <h3>Latest Courses</h3>
+      <table class="table"><thead><tr><th>Course</th><th>Code</th><th>Credits</th></tr></thead>
+      <tbody><tr><td><a class="link-muted" href="course-detail.html">Database Systems</a></td><td>CS301</td><td>4</td></tr>
+      <tr><td><a class="link-muted" href="course-detail.html">Web Development</a></td><td>CS205</td><td>3</td></tr></tbody></table>
+    </section>
+
+    <footer class="footer">© 2025 Kashish • <a class="link-muted" href="mailto:kashish106480@gmail.com">kashish106480@gmail.com</a></footer>
+  </div>
+
+  <!-- Add Student dialog (reusable small form) -->
+  <dialog id="dlgAddStudent">
+    <div class="dialog-header"><strong>Add New Student</strong><button data-close="dlgAddStudent" class="btn ghost">Close</button></div>
+    <form method="dialog" class="dialog-body" data-validate>
+      <div class="alert">Enter student details. All fields marked required are mandatory.</div>
+      <div class="form-row"><div style="flex:1"><label class="label">First name</label><input class="input" name="first_name" required pattern="^[A-Za-z\s]{2,40}$" title="Only letters and spaces, 2-40 chars"></div>
+      <div style="flex:1"><label class="label">Last name</label><input class="input" name="last_name" required></div></div>
+      <div class="form-row" style="margin-top:10px"><div style="flex:1"><label class="label">Email</label><input class="input" name="email" type="email" placeholder="name@example.com" required></div>
+      <div style="flex:1"><label class="label">DOB</label><input class="input" name="dob" type="date" required max="2025-11-01"></div></div>
+      <div style="margin-top:12px;display:flex;justify-content:flex-end;gap:8px"><button data-close="dlgAddStudent" class="btn ghost">Cancel</button><button class="btn" type="submit">Create</button></div>
+    </form>
+  </dialog>
+
+  <script src="assets.js"></script>
+</body>
+</html>

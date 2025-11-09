@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Courses — Student Information System</title>
+  <link rel="stylesheet" href="assets.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="brand">
+        <div class="logo">KS</div>
+        <div class="title">
+          <h1>Courses</h1>
+          <small class="text-muted">Explore and Manage Courses</small>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="students.html">Students</a>
+        <a href="courses.html" class="active">Courses</a>
+        <a href="grades.html">Grades</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="card" style="margin-top:18px;">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <input class="input" placeholder="Search courses">
+        <button class="btn" data-open="dlgAddCourse">+ New Course</button>
+      </div>
+
+      <table class="table" style="margin-top:15px;">
+        <thead>
+          <tr>
+            <th>Course Name</th>
+            <th>Code</th>
+            <th>Credits</th>
+            <th>Instructor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a class="link-muted" href="course-detail.html">Database Systems</a></td>
+            <td>CS301</td>
+            <td>4</td>
+            <td><a class="link-muted" href="instructor-profile.html">Raj Sharma</a></td>
+          </tr>
+          <tr>
+            <td><a class="link-muted" href="course-detail.html">Artificial Intelligence</a></td>
+            <td>AI401</td>
+            <td>4</td>
+            <td><a class="link-muted" href="instructor-profile.html">Dr. Neha Kapoor</a></td>
+          </tr>
+          <tr>
+            <td><a class="link-muted" href="course-detail.html">Web Technologies</a></td>
+            <td>WT202</td>
+            <td>3</td>
+            <td><a class="link-muted" href="instructor-profile.html">Kunal Verma</a></td>
+          </tr>
+          <tr>
+            <td><a class="link-muted" href="course-detail.html">Data Science</a></td>
+            <td>DS305</td>
+            <td>4</td>
+            <td><a class="link-muted" href="instructor-profile.html">Arjun Mehta</a></td>
+          </tr>
+          <tr>
+            <td><a class="link-muted" href="course-detail.html">Software Engineering</a></td>
+            <td>SE208</td>
+            <td>3</td>
+            <td><a class="link-muted" href="instructor-profile.html">Priya Sharma</a></td>
+          </tr>
+          <tr>
+            <td><a class="link-muted" href="course-detail.html">Machine Learning</a></td>
+            <td>ML502</td>
+            <td>4</td>
+            <td><a class="link-muted" href="instructor-profile.html">Rohan Mehta</a></td>
+          </tr>
+          <tr>
+            <td><a class="link-muted" href="course-detail.html">Cloud Computing</a></td>
+            <td>CC601</td>
+            <td>3</td>
+            <td><a class="link-muted" href="instructor-profile.html">Sneha Rao</a></td>
+          </tr>
+          <tr>
+            <td><a class="link-muted" href="course-detail.html">Cyber Security</a></td>
+            <td>CS405</td>
+            <td>3</td>
+            <td><a class="link-muted" href="instructor-profile.html">Rahul Nair</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      © 2025 Student Information System | Designed by Kashish  
+      <br>
+      Contact: <a href="mailto:kashish106480@gmail.com">kashish106480@gmail.com</a>
+    </footer>
+  </div>
+
+  <script src="assets.js"></script>
+</body>
+</html>

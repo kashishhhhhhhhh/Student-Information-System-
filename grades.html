@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Grades — SIS</title>
+  <link rel="stylesheet" href="assets.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">KS</div>
+        <div class="title">
+          <h1>Grades</h1>
+          <small class="text-muted">View & manage grades</small>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="students.html">Students</a>
+        <a href="grades.html" class="active">Grades</a>
+      </nav>
+    </header>
+
+    <main class="card" style="margin-top:18px">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <input class="input" placeholder="Search grades">
+        <button class="btn" data-open="dlgRecordGrade">Record Grade</button>
+      </div>
+
+      <table class="table" style="margin-top:12px">
+        <thead>
+          <tr>
+            <th>Grade ID</th>
+            <th>Enrollment</th>
+            <th>Student</th>
+            <th>Course</th>
+            <th>Grade</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>E1001</td>
+            <td>Priya Sharma</td>
+            <td>Database Systems</td>
+            <td>A</td>
+            <td>2025-11-01</td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>E1002</td>
+            <td>Rohan Mehta</td>
+            <td>Web Development</td>
+            <td>A-</td>
+            <td>2025-10-20</td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>E1003</td>
+            <td>Neha Kapoor</td>
+            <td>Artificial Intelligence</td>
+            <td>A+</td>
+            <td>2025-10-15</td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td>E1004</td>
+            <td>Arpit</td>
+            <td>Data Science</td>
+            <td>B+</td>
+            <td>2025-09-28</td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td>E1005</td>
+            <td>Angelia</td>
+            <td>Cyber Security</td>
+            <td>B</td>
+            <td>2025-10-12</td>
+          </tr>
+
+          <tr>
+            <td>6</td>
+            <td>E1006</td>
+            <td>Karan Patel</td>
+            <td>Cloud Computing</td>
+            <td>A</td>
+            <td>2025-09-10</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <footer class="footer">© 2025 Kashish</footer>
+  </div>
+
+  <!-- Record Grade dialog -->
+  <dialog id="dlgRecordGrade">
+    <div class="dialog-header">
+      <strong>Record Grade</strong>
+      <button data-close="dlgRecordGrade" class="btn ghost">Close</button>
+    </div>
+
+    <form method="dialog" class="dialog-body" data-validate>
+      <label class="label">Enrollment ID</label>
+      <input class="input" name="enrollment_id" type="text" placeholder="E1007" required>
+
+      <label class="label" style="margin-top:8px">Student Name</label>
+      <input class="input" name="student_name" type="text" required>
+
+      <label class="label" style="margin-top:8px">Course</label>
+      <input class="input" name="course_name" type="text" required>
+
+      <label class="label" style="margin-top:8px">Grade</label>
+      <input class="input" name="grade" pattern="^[A-F][+-]?$" placeholder="A, B+, C-" required>
+
+      <label class="label" style="margin-top:8px">Date</label>
+      <input class="input" name="date" type="date" required>
+
+      <div style="margin-top:12px;display:flex;justify-content:flex-end;gap:8px">
+        <button data-close="dlgRecordGrade" class="btn ghost">Cancel</button>
+        <button class="btn" type="submit">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="assets.js"></script>
+</body>
+</html>
+

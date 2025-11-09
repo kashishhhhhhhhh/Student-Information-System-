@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enrollments | Student Information System</title>
+  <link rel="stylesheet" href="assets.css">
+</head>
+<body>
+
+  <header>
+    <h1>Student Information System</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="students.html">Students</a>
+      <a href="courses.html">Courses</a>
+      <a href="enrollments.html" class="active">Enrollments</a>
+      <a href="grades.html">Grades</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h2>Current Enrollments</h2>
+    <button class="add-btn" id="addEnrollmentBtn">+ New Enrollment</button>
+
+    <table class="table" style="margin-top: 18px;">
+      <thead>
+        <tr>
+          <th>Enrollment ID</th>
+          <th>Student Name</th>
+          <th>Course</th>
+          <th>Instructor</th>
+          <th>Semester</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>E1001</td>
+          <td>Priya Sharma</td>
+          <td>Database Systems</td>
+          <td>Raj Sharma</td>
+          <td>Spring 2025</td>
+          <td><span class="badge active">Active</span></td>
+        </tr>
+
+        <tr>
+          <td>E1002</td>
+          <td>Rohan Mehta</td>
+          <td>Web Development</td>
+          <td>Anita Roy</td>
+          <td>Spring 2025</td>
+          <td><span class="badge active">Active</span></td>
+        </tr>
+
+        <tr>
+          <td>E1003</td>
+          <td>Neha Kapoor</td>
+          <td>Artificial Intelligence</td>
+          <td>Dr. Neha Kapoor</td>
+          <td>Fall 2025</td>
+          <td><span class="badge pending">Pending</span></td>
+        </tr>
+
+        <tr>
+          <td>E1004</td>
+          <td>Arpit</td>
+          <td>Data Science</td>
+          <td>Rohan Mehta</td>
+          <td>Summer 2025</td>
+          <td><span class="badge completed">Completed</span></td>
+        </tr>
+
+        <!-- New Enrollment 5 -->
+        <tr>
+          <td>E1005</td>
+          <td>Angelia</td>
+          <td>Cyber Security</td>
+          <td>Rahul Nair</td>
+          <td>Fall 2025</td>
+          <td><span class="badge active">Active</span></td>
+        </tr>
+
+        <!-- New Enrollment 6 -->
+        <tr>
+          <td>E1006</td>
+          <td>Karan Patel</td>
+          <td>Cloud Computing</td>
+          <td>Arjun Verma</td>
+          <td>Winter 2025</td>
+          <td><span class="badge active">Active</span></td>
+        </tr>
+
+        <!-- New Enrollment 7 -->
+        <tr>
+          <td>E1007</td>
+          <td>Sanya Malhotra</td>
+          <td>Software Engineering</td>
+          <td>Priya Sharma</td>
+          <td>Spring 2025</td>
+          <td><span class="badge completed">Completed</span></td>
+        </tr>
+
+        <!-- New Enrollment 8 -->
+        <tr>
+          <td>E1008</td>
+          <td>Rajat Singh</td>
+          <td>Robotics</td>
+          <td>Rajat Singh</td>
+          <td>Fall 2025</td>
+          <td><span class="badge active">Active</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>© 2025 Student Information System | Designed by <strong>Kashish</strong></p>
+    <p>Contact: <a href="mailto:kashish106480@gmail.com">kashish106480@gmail.com</a></p>
+  </footer>
+
+  <!-- Add Enrollment Dialog -->
+  <dialog id="enrollmentDialog">
+    <form id="addEnrollmentForm" method="dialog">
+      <h3>Add New Enrollment</h3>
+
+      <label for="studentName">Student Name:</label>
+      <input type="text" id="studentName" name="studentName" required>
+
+      <label for="courseName">Course:</label>
+      <input type="text" id="courseName" name="courseName" required>
+
+      <label for="instructorName">Instructor:</label>
+      <input type="text" id="instructorName" name="instructorName" required>
+
+      <label for="semester">Semester:</label>
+      <select id="semester" name="semester" required>
+        <option value="">Select</option>
+        <option>Spring 2025</option>
+        <option>Summer 2025</option>
+        <option>Fall 2025</option>
+        <option>Winter 2025</option>
+      </select>
+
+      <label for="status">Status:</label>
+      <select id="status" name="status" required>
+        <option value="">Select</option>
+        <option>Active</option>
+        <option>Pending</option>
+        <option>Completed</option>
+      </select>
+
+      <menu>
+        <button value="cancel" class="cancel-btn">Cancel</button>
+        <button value="confirm" class="confirm-btn">Add</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <script src="assets.js"></script>
+</body>
+</html>

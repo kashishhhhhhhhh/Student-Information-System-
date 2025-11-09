@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Add Course — SIS</title>
+  <link rel="stylesheet" href="assets.css"></head>
+
+                                                                                                                                                                                           
+<body>
+  <div class="container"><header class="header"><div class="brand"><div class="logo">KS</div><div class="title"><h1>Add Course</h1><small class="text-muted">Create new course</small></div></div>
+    <nav class="nav"><a href="courses.html">Back</a><a href="index.html">Home</a></nav></header>
+
+    <main class="card" style="margin-top:18px">
+      <form data-validate>
+        <label class="label">Course Name</label><input class="input" name="course_name" required>
+        <label class="label" style="margin-top:8px">Course Code</label><input class="input" name="course_code" pattern="^[A-Z0-9]{3,8}$" required>
+        <div style="margin-top:10px" class="form-row"><div style="flex:1"><label class="label">Credits</label><input class="input" name="credits" type="number" min="1" max="6" value="3" required></div>
+        <div style="flex:1"><label class="label">Instructor ID</label><input class="input" name="instructor_id" type="number"></div></div>
+        <div style="margin-top:12px"><button class="btn" type="submit">Create Course</button></div>
+      </form>
+    </main>
+
+    <footer class="footer">© 2025 Kashish</footer>
+  </div>
+  <script src="assets.js"></script>
+</body></html>

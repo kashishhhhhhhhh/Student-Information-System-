@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Profiles | SIS - Kashish</title>
+  <link rel="stylesheet" href="assets.css">
+</head>
+<body>
+
+  <header>
+    <h1>Student Information System</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="students.html">Students</a>
+      <a href="courses.html">Courses</a>
+      <a href="grades.html">Grades</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h2 class="page-title">Student Profiles</h2>
+
+    <section class="student-grid">
+      <!-- Student 1 -->
+      <div class="card student-card">
+        <img src="https://randomuser.me/api/portraits/women/11.jpg" alt="Priya Sharma" class="avatar">
+        <h3>Priya Sharma</h3>
+        <p><strong>ID:</strong> S1001</p>
+        <p><strong>Course:</strong> Computer Science</p>
+        <p><strong>Email:</strong> priya.sharma@example.com</p>
+        <p><strong>GPA:</strong> 3.9</p>
+        <button onclick="openDialog('profileDialog1')">View Profile</button>
+      </div>
+
+      <!-- Student 2 -->
+      <div class="card student-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rohan Mehta" class="avatar">
+        <h3>Rohan Mehta</h3>
+        <p><strong>ID:</strong> S1002</p>
+        <p><strong>Course:</strong> Information Technology</p>
+        <p><strong>Email:</strong> rohan.mehta@example.com</p>
+        <p><strong>GPA:</strong> 3.7</p>
+        <button onclick="openDialog('profileDialog2')">View Profile</button>
+      </div>
+
+      <!-- Student 3 -->
+      <div class="card student-card">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Nattalia" class="avatar">
+        <h3>Nattalia</h3>
+        <p><strong>ID:</strong> S1003</p>
+        <p><strong>Course:</strong> Artificial Intelligence</p>
+        <p><strong>Email:</strong> nettie123@example.com</p>
+        <p><strong>GPA:</strong> 4.0</p>
+        <button onclick="openDialog('profileDialog3')">View Profile</button>
+      </div>
+
+      <!-- Student 4 -->
+      <div class="card student-card">
+        <img src="https://randomuser.me/api/portraits/men/14.jpg" alt="Arpit" class="avatar">
+        <h3>Arpit</h3>
+        <p><strong>ID:</strong> S1004</p>
+        <p><strong>Course:</strong> Data Science</p>
+        <p><strong>Email:</strong> arpitver@example.com</p>
+        <p><strong>GPA:</strong> 3.8</p>
+        <button onclick="openDialog('profileDialog4')">View Profile</button>
+      </div>
+
+      <!-- Student 5 -->
+      <div class="card student-card">
+        <img src="https://randomuser.me/api/portraits/women/24.jpg" alt="Angelia" class="avatar">
+        <h3>Angelia</h3>
+        <p><strong>ID:</strong> S1005</p>
+        <p><strong>Course:</strong> Cyber Security</p>
+        <p><strong>Email:</strong> angel.singh@example.com</p>
+        <p><strong>GPA:</strong> 3.6</p>
+        <button onclick="openDialog('profileDialog5')">View Profile</button>
+      </div>
+
+      <!-- Student 6 -->
+      <div class="card student-card">
+        <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Karan Patel" class="avatar">
+        <h3>Karan Patel</h3>
+        <p><strong>ID:</strong> S1006</p>
+        <p><strong>Course:</strong> Cloud Computing</p>
+        <p><strong>Email:</strong> karan.patel@example.com</p>
+        <p><strong>GPA:</strong> 3.9</p>
+        <button onclick="openDialog('profileDialog6')">View Profile</button>
+      </div>
+
+      <!-- Student 7 -->
+      <div class="card student-card">
+        <img src="https://randomuser.me/api/portraits/women/50.jpg" alt="Sanya Malhotra" class="avatar">
+        <h3>Sanya Malhotra</h3>
+        <p><strong>ID:</strong> S1007</p>
+        <p><strong>Course:</strong> Software Engineering</p>
+        <p><strong>Email:</strong> sanya.malhotra@example.com</p>
+        <p><strong>GPA:</strong> 3.8</p>
+        <button onclick="openDialog('profileDialog7')">View Profile</button>
+      </div>
+
+      <!-- Student 8 -->
+      <div class="card student-card">
+        <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Rajat Singh" class="avatar">
+        <h3>Rajat Singh</h3>
+        <p><strong>ID:</strong> S1008</p>
+        <p><strong>Course:</strong> Robotics</p>
+        <p><strong>Email:</strong> rajat.singh@example.com</p>
+        <p><strong>GPA:</strong> 3.9</p>
+        <button onclick="openDialog('profileDialog8')">View Profile</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Dialog Boxes -->
+  <dialog id="profileDialog1">
+    <h3>Priya Sharma - Full Profile</h3>
+    <p><strong>Address:</strong> 45 MG Road, Delhi</p>
+    <p><strong>Phone:</strong> +91 9876543210</p>
+    <p><strong>Achievements:</strong> Gold Medalist, Coding Hackathon 2024</p>
+    <button onclick="closeDialog('profileDialog1')">Close</button>
+  </dialog>
+
+  <dialog id="profileDialog2">
+    <h3>Rohan Mehta - Full Profile</h3>
+    <p><strong>Address:</strong> 22 Park Lane, Mumbai</p>
+    <p><strong>Phone:</strong> +91 9123456780</p>
+    <p><strong>Achievements:</strong> Published Research on IoT Security</p>
+    <button onclick="closeDialog('profileDialog2')">Close</button>
+  </dialog>
+
+  <dialog id="profileDialog3">
+    <h3>Nattalia - Full Profile</h3>
+    <p><strong>Address:</strong> 11 Lotus Avenue, Bangalore</p>
+    <p><strong>Phone:</strong> +91 9090909090</p>
+    <p><strong>Achievements:</strong> 1st Place, AI Innovation Contest 2024</p>
+    <button onclick="closeDialog('profileDialog3')">Close</button>
+  </dialog>
+
+  <dialog id="profileDialog4">
+    <h3>Arpit - Full Profile</h3>
+    <p><strong>Address:</strong> 78 Palm Street, Pune</p>
+    <p><strong>Phone:</strong> +91 9000012345</p>
+    <p><strong>Achievements:</strong> Data Visualization Lead, Tech Expo 2025</p>
+    <button onclick="closeDialog('profileDialog4')">Close</button>
+  </dialog>
+
+  <dialog id="profileDialog5">
+    <h3>Angelia - Full Profile</h3>
+    <p><strong>Address:</strong> 90 Blossom Avenue, Hyderabad</p>
+    <p><strong>Phone:</strong> +91 8899776655</p>
+    <p><strong>Achievements:</strong> Winner, National Cyber Security Challenge 2024</p>
+    <button onclick="closeDialog('profileDialog5')">Close</button>
+  </dialog>
+
+  <dialog id="profileDialog6">
+    <h3>Karan Patel - Full Profile</h3>
+    <p><strong>Address:</strong> 210 Skyline Towers, Ahmedabad</p>
+    <p><strong>Phone:</strong> +91 7766554433</p>
+    <p><strong>Achievements:</strong> AWS Cloud Practitioner Certified</p>
+    <button onclick="closeDialog('profileDialog6')">Close</button>
+  </dialog>
+
+  <dialog id="profileDialog7">
+    <h3>Sanya Malhotra - Full Profile</h3>
+    <p><strong>Address:</strong> 12 Pearl Heights, Jaipur</p>
+    <p><strong>Phone:</strong> +91 9988776655</p>
+    <p><strong>Achievements:</strong> Developed University Attendance Tracker App</p>
+    <button onclick="closeDialog('profileDialog7')">Close</button>
+  </dialog>
+
+  <dialog id="profileDialog8">
+    <h3>Rajat Singh - Full Profile</h3>
+    <p><strong>Address:</strong> 9 Skyline View, Chandigarh</p>
+    <p><strong>Phone:</strong> +91 9876001122</p>
+    <p><strong>Achievements:</strong> Robotics Innovation Award 2025 Winner</p>
+    <button onclick="closeDialog('profileDialog8')">Close</button>
+  </dialog>
+
+  <footer>
+    <p>© 2025 Student Information System | Designed by <strong>Kashish</strong></p>
+    <p>Contact: <a href="mailto:kashish106480@gmail.com">kashish106480@gmail.com</a></p>
+  </footer>
+
+  <script>
+    function openDialog(id) {
+      document.getElementById(id).showModal();
+    }
+    function closeDialog(id) {
+      document.getElementById(id).close();
+    }
+  </script>
+</body>
+</html>

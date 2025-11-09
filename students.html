@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Students | Student Information System</title>
+  <link rel="stylesheet" href="assets.css">
+</head>
+<body>
+  <header>
+    <h1>Student Information System</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="students.html" class="active">Students</a>
+      <a href="courses.html">Courses</a>
+      <a href="grades.html">Grades</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="content"><main class="card" style="margin-top:18px">
+  <h2>Student Records</h2>
+
+  <!-- Table for displaying student data -->
+  <table id="studentsTable" class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Course</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Data will be added here dynamically using assets.js -->
+    </tbody>
+  </table>
+</main>
+    <h2>All Students</h2>
+
+    <button id="addStudentBtn" class="add-btn">+ Add Student</button>
+
+    <div class="student-grid">
+
+      <!-- Student 1 -->
+      <div class="student-card">
+        <img src="https://randomuser.me/api/portraits/women/11.jpg" alt="Priya Sharma">
+        <h3>Priya Sharma</h3>
+        <p>Course: Computer Science</p>
+        <p>Email: priya.sharma@example.com</p>
+        <p>GPA: 3.9</p>
+        <a href="student-profile.html?id=S1001" class="view-btn">View Profile</a>
+      </div>
+
+      <!-- Student 2 -->
+      <div class="student-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rohan Mehta">
+        <h3>Rohan Mehta</h3>
+        <p>Course: Information Technology</p>
+        <p>Email: rohan.mehta@example.com</p>
+        <p>GPA: 3.7</p>
+        <a href="student-profile.html?id=S1002" class="view-btn">View Profile</a>
+      </div>
+
+      <!-- Student 3 -->
+      <div class="student-card">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Neha Kapoor">
+        <h3>Nattalia</h3>
+        <p>Course: Artificial Intelligence</p>
+        <p>Email: nettie123@example.com</p>
+        <p>GPA: 4.0</p>
+        <a href="student-profile.html?id=S1003" class="view-btn">View Profile</a>
+      </div>
+
+      <!-- Student 4 -->
+      <div class="student-card">
+        <img src="https://randomuser.me/api/portraits/men/14.jpg" alt="Arjun Verma">
+        <h3>Arpit</h3>
+        <p>Course: Data Science</p>
+        <p>Email: arpitver@example.com</p>
+        <p>GPA: 3.8</p>
+        <a href="student-profile.html?id=S1004" class="view-btn">View Profile</a>
+      </div>
+
+      <!-- Student 5 -->
+      <div class="student-card">
+        <img src="https://randomuser.me/api/portraits/women/24.jpg" alt="Aditi Singh">
+        <h3>Angelia</h3>
+        <p>Course: Cyber Security</p>
+        <p>Email: angel.singh@example.com</p>
+        <p>GPA: 3.6</p>
+        <a href="student-profile.html?id=S1005" class="view-btn">View Profile</a>
+      </div>
+
+      <!-- Student 6 -->
+      <div class="student-card">
+        <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Karan Patel">
+        <h3>Karan Patel</h3>
+        <p>Course: Cloud Computing</p>
+        <p>Email: karan.patel@example.com</p>
+        <p>GPA: 3.9</p>
+        <a href="student-profile.html?id=S1006" class="view-btn">View Profile</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Student Information System | Designed by <strong>Kashish</strong></p>
+    <p>Contact: <a href="mailto:kashish106480@gmail.com">kashish106480@gmail.com</a></p>
+  </footer>
+
+  <!-- Add Student Dialog -->
+  <dialog id="studentDialog">
+    <form id="addStudentForm" method="dialog">
+      <h3>Add New Student</h3>
+
+      <label for="studentName">Full Name:</label>
+      <input type="text" id="studentName" name="studentName" required minlength="3">
+
+      <label for="studentEmail">Email:</label>
+      <input type="email" id="studentEmail" name="studentEmail" required>
+
+      <label for="studentCourse">Course:</label>
+      <select id="studentCourse" name="studentCourse" required>
+        <option value="">Select Course</option>
+        <option>Computer Science</option>
+        <option>Information Technology</option>
+        <option>Artificial Intelligence</option>
+        <option>Data Science</option>
+        <option>Cyber Security</option>
+        <option>Cloud Computing</option>
+      </select>
+
+      <label for="studentGPA">GPA:</label>
+      <input type="number" id="studentGPA" name="studentGPA" min="0" max="4" step="0.1" required>
+
+      <menu>
+        <button value="cancel" class="cancel-btn">Cancel</button>
+        <button value="confirm" class="confirm-btn">Add</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <script src="assets.js"></script>
+</body>
+</html>
